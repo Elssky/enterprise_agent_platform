@@ -1,11 +1,11 @@
 # Enterprise Agent Platform Engineering: From Data Intelligence Foundation to AI-Native Business Systems
 
-[![Repository](https://img.shields.io/badge/repo-GitHub-blue)](https://github.com/datagallery-lab/enterprise_agent_platform_engineering)
+[![Repository](https://img.shields.io/badge/repo-GitHub-blue)](https://github.com/datagallery-lab/enterprise_agent_platform)
 [![License](https://img.shields.io/badge/license-Apache%202.0-green)](LICENSE)
 
 **English | [中文](README_zh.md)**
 
-**Read online / 在线阅读链接:** [English edition](https://datagallery-lab.github.io/enterprise_agent_platform_engineering/en/) | [中文版本](https://datagallery-lab.github.io/enterprise_agent_platform_engineering/)
+**Read online / 在线阅读链接:** [English edition](https://datagallery-lab.github.io/enterprise_agent_platform/en/) | [中文版本](https://datagallery-lab.github.io/enterprise_agent_platform/)
 
 ## Introduction
 

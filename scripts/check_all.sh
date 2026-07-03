@@ -46,6 +46,10 @@ echo "=== sensitive info scan ==="
 python3 scripts/check_sensitive.py
 
 echo
+echo "=== public README and site link check ==="
+python3 scripts/check_public_links.py
+
+echo
 echo "=== mini-platform tests ==="
 cd mini-platform
 python3 -m pytest tests/ -q

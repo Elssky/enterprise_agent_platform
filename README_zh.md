@@ -1,11 +1,11 @@
 # 《企业级 Agent 平台工程：从数据智能底座到 AI 原生业务系统》
 
-[![Repository](https://img.shields.io/badge/repo-GitHub-blue)](https://github.com/datagallery-lab/enterprise_agent_platform_engineering)
+[![Repository](https://img.shields.io/badge/repo-GitHub-blue)](https://github.com/datagallery-lab/enterprise_agent_platform)
 [![License](https://img.shields.io/badge/license-Apache%202.0-green)](LICENSE)
 
 **[English](README.md) | 中文**
 
-**在线阅读链接：** [中文版本](https://datagallery-lab.github.io/enterprise_agent_platform_engineering/) | [English edition](https://datagallery-lab.github.io/enterprise_agent_platform_engineering/en/)
+**在线阅读链接：** [中文版本](https://datagallery-lab.github.io/enterprise_agent_platform/) | [English edition](https://datagallery-lab.github.io/enterprise_agent_platform/en/)
 
 ## 简介
 
