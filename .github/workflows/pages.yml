@@ -1,9 +1,6 @@
-name: pages
+name: pages-legacy-manual
 
-# Optimized documentation deployment. Touch this file to retrigger Pages after enabling Actions.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -11,93 +8,8 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
 jobs:
-  pages-setup:
-    runs-on: ubuntu-latest
-    outputs:
-      enabled: ${{ steps.check.outputs.enabled }}
-    steps:
-      - name: Ensure GitHub Pages uses Actions
-        id: check
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          status="$(
-            curl -sS -L \
-              -o /tmp/pages.json \
-              -w "%{http_code}" \
-              -H "Authorization: Bearer ${GH_TOKEN}" \
-              -H "Accept: application/vnd.github+json" \
-              -H "X-GitHub-Api-Version: 2022-11-28" \
-              "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages"
-          )"
-
-          if [ "$status" = "200" ]; then
-            echo "enabled=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          echo "enabled=false" >> "$GITHUB_OUTPUT"
-          echo "::notice::GitHub Pages is not enabled for ${GITHUB_REPOSITORY}; skipping Pages deployment."
-          cat /tmp/pages.json
-
-  build:
-    runs-on: ubuntu-latest
-    needs: pages-setup
-    if: needs.pages-setup.outputs.enabled == 'true'
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Install documentation dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements-docs.txt
-
-      - name: Prepare optimized documentation source
-        run: |
-          rm -rf .optimized-docs
-          mkdir -p .optimized-docs/part01-overview/ch
-          mkdir -p .optimized-docs/images/part1/ch
-          mkdir -p .optimized-docs/stylesheets
-
-          cp docs/optimized_index.md .optimized-docs/index.md
-          cp docs/part01-overview/ch/new_index_.md .optimized-docs/part01-overview/ch/new_index_.md
-          cp docs/part01-overview/ch/new_ch01-agent_.md .optimized-docs/part01-overview/ch/new_ch01-agent_.md
-          cp docs/part01-overview/ch/new_ch02-agent_.md .optimized-docs/part01-overview/ch/new_ch02-agent_.md
-          cp docs/part01-overview/ch/new_ch03-ai-agent_.md .optimized-docs/part01-overview/ch/new_ch03-ai-agent_.md
-          cp docs/part01-overview/ch/new_ch04_.md .optimized-docs/part01-overview/ch/new_ch04_.md
-
-          cp -r docs/images/part1/ch/. .optimized-docs/images/part1/ch/
-          cp -r docs/stylesheets/. .optimized-docs/stylesheets/
-
-      - name: Build optimized Chinese site
-        run: mkdocs build --strict --clean --config-file mkdocs.optimized.yml --site-dir site
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-
-  deploy:
-    needs: [pages-setup, build]
-    if: needs.pages-setup.outputs.enabled == 'true'
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  note:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - run: echo "Legacy workflow retained for manual fallback. Use optimized-pages.yml for automatic deployment."
