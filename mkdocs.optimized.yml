@@ -112,3 +112,11 @@ nav:
       - 第29章：Agent 协议与标准: part05-agent-capabilities/ch/new_ch29-agent_.md
       - 第30章：Human-in-the-loop 与长任务: part05-agent-capabilities/ch/new_ch30-human-in-the-loop_.md
       - 第31章：框架横向对标: part05-agent-capabilities/ch/new_ch31_.md
+  - Part VI DataAgent 主线深潜:
+      - 导读: part06-dataagent/ch/new_index_.md
+      - 第32章：DataAgent 产品形态: part06-dataagent/ch/new_ch32-dataagent_.md
+      - 第33章：语义层工程: part06-dataagent/ch/new_ch33_.md
+      - 第34章：NL2SQL 工程化: part06-dataagent/ch/new_ch34-nl2sql_.md
+      - 第35章：Text-to-Pandas / Text-to-Python: part06-dataagent/ch/new_ch35-text-to-pandas-text-to-python_.md
+      - 第36章：数据分析、可视化与报告: part06-dataagent/ch/new_ch36_.md
+      - 第37章：DataAgent 对标与生态: part06-dataagent/ch/new_ch37-dataagent_.md

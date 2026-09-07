@@ -4,7 +4,7 @@
 
 这一版本以“更高信息密度、更少重复、更适合连续阅读和快速扫读”为目标。原始章节仍保留在仓库中，在线阅读页优先展示经过精简、合并和重点标注后的版本。
 
-**当前已完成：Part I 总论与平台观（第 1–4 章）、Part II 模型与推理（第 5–9 章）、Part III 数据基础设施（第 10–15 章）、Part IV 向量、检索与知识工程（第 16–21 章）与 Part V Agent 能力百科（第 22–31 章）。**
+**当前已完成：Part I 总论与平台观（第 1–4 章）、Part II 模型与推理（第 5–9 章）、Part III 数据基础设施（第 10–15 章）、Part IV 向量、检索与知识工程（第 16–21 章）、Part V Agent 能力百科（第 22–31 章）与 Part VI DataAgent 主线深潜（第 32–37 章）。**
 
 ## Part I 总论与平台观
 
@@ -57,11 +57,21 @@
 - [第30章 Human-in-the-loop 与长任务](part05-agent-capabilities/ch/new_ch30-human-in-the-loop_.md)
 - [第31章 框架横向对标](part05-agent-capabilities/ch/new_ch31_.md)
 
+## Part VI DataAgent 主线深潜
+
+- [Part VI 导读](part06-dataagent/ch/new_index_.md)
+- [第32章 DataAgent 产品形态](part06-dataagent/ch/new_ch32-dataagent_.md)
+- [第33章 语义层工程](part06-dataagent/ch/new_ch33_.md)
+- [第34章 NL2SQL 工程化](part06-dataagent/ch/new_ch34-nl2sql_.md)
+- [第35章 Text-to-Pandas / Text-to-Python](part06-dataagent/ch/new_ch35-text-to-pandas-text-to-python_.md)
+- [第36章 数据分析、可视化与报告](part06-dataagent/ch/new_ch36_.md)
+- [第37章 DataAgent 对标与生态](part06-dataagent/ch/new_ch37-dataagent_.md)
+
 ## 本版编辑原则
 
 优化过程中遵循以下原则：保留核心定义、工程判断、重要案例、图片、表格、代码与参考文献；合并过细小节；删除同义反复和低信息量扩写；根据内容密度将章节整体压缩约 30%–50%；并用少量 **加粗结论句** 提升扫读效率。
 
-技术密度较高的章节不会为了追求固定压缩率而硬删内容。模型推理、数据一致性、缓存、实时计算、Schema、契约、权限、故障恢复、检索、RAG、知识图谱、Runtime、工具协议、Memory 和 HITL 等工程关系会优先保留，重复的“发布门禁—运行台账—复审—证据”尽量合并成一条完整的生产化链路。
+技术密度较高的章节不会为了追求固定压缩率而硬删内容。模型推理、数据一致性、缓存、实时计算、Schema、契约、权限、故障恢复、检索、RAG、知识图谱、Runtime、工具协议、Memory、HITL、语义层、NL2SQL、Python 沙箱与 EvidenceRef 等工程关系会优先保留，重复的“发布门禁—运行台账—复审—证据”尽量合并成一条完整的生产化链路。
 
 **目标不是做摘要，而是在尽量不损失有效信息的前提下，让正文更像人工精修后的专业技术书。**
 
