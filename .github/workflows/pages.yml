@@ -1,5 +1,6 @@
 name: pages
 
+# Optimized documentation deployment. Touch this file to retrigger Pages after enabling Actions.
 on:
   push:
     branches: [main]
