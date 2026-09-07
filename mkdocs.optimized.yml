@@ -77,3 +77,10 @@ nav:
       - 第2章：企业级 Agent 平台的边界: part01-overview/ch/new_ch02-agent_.md
       - 第3章：AI 原生业务系统: part01-overview/ch/new_ch03-ai-agent_.md
       - 第4章：全书地图: part01-overview/ch/new_ch04_.md
+  - Part II 模型与推理:
+      - 导读: part02-model-inference/ch/new_index_.md
+      - 第5章：大模型选型: part02-model-inference/ch/new_ch05_.md
+      - 第6章：本地推理引擎: part02-model-inference/ch/new_ch06_.md
+      - 第7章：推理优化: part02-model-inference/ch/new_ch07_.md
+      - 第8章：结构化输出与提示工程: part02-model-inference/ch/new_ch08_.md
+      - 第9章：模型能力定制与知识增强: part02-model-inference/ch/new_ch09_.md
