@@ -1,0 +1,79 @@
+site_name: 企业级 Agent 平台工程 · 优化阅读版
+site_description: 企业级 Agent 平台工程中文精简优化版
+site_author: 开源社区
+site_url: https://elssky.github.io/enterprise_agent_platform/
+repo_name: GitHub
+repo_url: https://github.com/Elssky/enterprise_agent_platform
+edit_uri: edit/main/docs/
+docs_dir: .optimized-docs
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: 切换深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: red
+      toggle:
+        icon: material/weather-night
+        name: 切换浅色模式
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search:
+      lang:
+        - zh
+  - glightbox
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - 首页: index.md
+  - Part I 总论与平台观:
+      - 导读: part01-overview/ch/new_index_.md
+      - 第1章：Agent 的边界: part01-overview/ch/new_ch01-agent_.md
+      - 第2章：企业级 Agent 平台的边界: part01-overview/ch/new_ch02-agent_.md
+      - 第3章：AI 原生业务系统: part01-overview/ch/new_ch03-ai-agent_.md
+      - 第4章：全书地图: part01-overview/ch/new_ch04_.md
