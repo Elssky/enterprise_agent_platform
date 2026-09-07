@@ -35,17 +35,28 @@ jobs:
         run: |
           rm -rf .optimized-docs
           mkdir -p .optimized-docs/part01-overview/ch
+          mkdir -p .optimized-docs/part02-model-inference/ch
           mkdir -p .optimized-docs/images/part1/ch
+          mkdir -p .optimized-docs/images/part2/ch
           mkdir -p .optimized-docs/stylesheets
 
           cp docs/optimized_index.md .optimized-docs/index.md
+
           cp docs/part01-overview/ch/new_index_.md .optimized-docs/part01-overview/ch/new_index_.md
           cp docs/part01-overview/ch/new_ch01-agent_.md .optimized-docs/part01-overview/ch/new_ch01-agent_.md
           cp docs/part01-overview/ch/new_ch02-agent_.md .optimized-docs/part01-overview/ch/new_ch02-agent_.md
           cp docs/part01-overview/ch/new_ch03-ai-agent_.md .optimized-docs/part01-overview/ch/new_ch03-ai-agent_.md
           cp docs/part01-overview/ch/new_ch04_.md .optimized-docs/part01-overview/ch/new_ch04_.md
 
+          cp docs/part02-model-inference/ch/new_index_.md .optimized-docs/part02-model-inference/ch/new_index_.md
+          cp docs/part02-model-inference/ch/new_ch05_.md .optimized-docs/part02-model-inference/ch/new_ch05_.md
+          cp docs/part02-model-inference/ch/new_ch06_.md .optimized-docs/part02-model-inference/ch/new_ch06_.md
+          cp docs/part02-model-inference/ch/new_ch07_.md .optimized-docs/part02-model-inference/ch/new_ch07_.md
+          cp docs/part02-model-inference/ch/new_ch08_.md .optimized-docs/part02-model-inference/ch/new_ch08_.md
+          cp docs/part02-model-inference/ch/new_ch09_.md .optimized-docs/part02-model-inference/ch/new_ch09_.md
+
           cp -r docs/images/part1/ch/. .optimized-docs/images/part1/ch/
+          cp -r docs/images/part2/ch/. .optimized-docs/images/part2/ch/
           cp -r docs/stylesheets/. .optimized-docs/stylesheets/
 
       - name: Build optimized Chinese site
