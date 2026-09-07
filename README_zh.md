@@ -5,7 +5,7 @@
 
 **[English](README.md) | 中文**
 
-**在线阅读链接：** [中文版本](https://datagallery-lab.github.io/enterprise_agent_platform/) | [English edition](https://datagallery-lab.github.io/enterprise_agent_platform/en/)
+**在线阅读链接：** [优化版中文在线阅读](https://elssky.github.io/enterprise_agent_platform/)
 
 ## 简介
 
