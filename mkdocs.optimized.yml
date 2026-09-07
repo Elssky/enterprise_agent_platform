@@ -120,3 +120,10 @@ nav:
       - 第35章：Text-to-Pandas / Text-to-Python: part06-dataagent/ch/new_ch35-text-to-pandas-text-to-python_.md
       - 第36章：数据分析、可视化与报告: part06-dataagent/ch/new_ch36_.md
       - 第37章：DataAgent 对标与生态: part06-dataagent/ch/new_ch37-dataagent_.md
+  - Part VII 可观测性、评估与成本:
+      - 导读: part07-observability-eval/ch/new_index_.md
+      - 第38章：Agent 可观测性与运行诊断: part07-observability-eval/ch/new_ch38-trace_.md
+      - 第39章：企业级 DataAgent 评测体系设计与 Benchmark 构建: part07-observability-eval/ch/new_ch39-dataagent-eval-benchmark_.md
+      - 第40章：在线评测、模型裁判与持续优化: part07-observability-eval/ch/new_ch40-llm-as-judge_.md
+      - 第41章：成本治理与缓存优化: part07-observability-eval/ch/new_ch41-cost-governance-cache_.md
+      - 第42章：SLO 管理、限流与系统韧性: part07-observability-eval/ch/new_ch42-slo_.md
