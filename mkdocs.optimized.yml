@@ -133,3 +133,8 @@ nav:
       - 第44章：模型部署: part08-deployment/ch/new_ch44_.md
       - 第45章：LLM 网关与多租户: part08-deployment/ch/new_ch45-llm_.md
       - 第46章：GitOps、IaC 与边缘推理: part08-deployment/ch/new_ch46-gitops-iac_.md
+  - Part IX 前端、交互与多模态:
+      - 导读: part09-frontend-multimodal/ch/new_index_.md
+      - 第47章：对话 UI 与流式输出: part09-frontend-multimodal/ch/new_ch47-ui_.md
+      - 第48章：Generative UI 与富交互: part09-frontend-multimodal/ch/new_ch48-generative-ui_.md
+      - 第49章：多模态输入与语音 Agent: part09-frontend-multimodal/ch/new_ch49-agent_.md

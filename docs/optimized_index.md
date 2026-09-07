@@ -4,7 +4,7 @@
 
 这一版本以“更高信息密度、更少重复、更适合连续阅读和快速扫读”为目标。原始章节仍保留在仓库中，在线阅读页优先展示经过精简、合并和重点标注后的版本。
 
-**当前已完成：Part I 总论与平台观（第 1–4 章）、Part II 模型与推理（第 5–9 章）、Part III 数据基础设施（第 10–15 章）、Part IV 向量、检索与知识工程（第 16–21 章）、Part V Agent 能力百科（第 22–31 章）、Part VI DataAgent 主线深潜（第 32–37 章）、Part VII 可观测性、评估与成本（第 38–42 章）与 Part VIII 部署与基础设施（第 43–46 章）。**
+**当前已完成：Part I 总论与平台观（第 1–4 章）、Part II 模型与推理（第 5–9 章）、Part III 数据基础设施（第 10–15 章）、Part IV 向量、检索与知识工程（第 16–21 章）、Part V Agent 能力百科（第 22–31 章）、Part VI DataAgent 主线深潜（第 32–37 章）、Part VII 可观测性、评估与成本（第 38–42 章）、Part VIII 部署与基础设施（第 43–46 章）与 Part IX 前端、交互与多模态（第 47–49 章）。**
 
 ## Part I 总论与平台观
 
@@ -84,11 +84,18 @@
 - [第45章 LLM 网关与多租户](part08-deployment/ch/new_ch45-llm_.md)
 - [第46章 GitOps、IaC 与边缘推理](part08-deployment/ch/new_ch46-gitops-iac_.md)
 
+## Part IX 前端、交互与多模态
+
+- [Part IX 导读](part09-frontend-multimodal/ch/new_index_.md)
+- [第47章 对话 UI 与流式输出](part09-frontend-multimodal/ch/new_ch47-ui_.md)
+- [第48章 Generative UI 与富交互](part09-frontend-multimodal/ch/new_ch48-generative-ui_.md)
+- [第49章 多模态输入与语音 Agent](part09-frontend-multimodal/ch/new_ch49-agent_.md)
+
 ## 本版编辑原则
 
 优化过程中遵循以下原则：保留核心定义、工程判断、重要案例、图片、表格、代码与参考文献；合并过细小节；删除同义反复和低信息量扩写；根据内容密度将章节整体压缩约 30%–50%；并用少量 **加粗结论句** 提升扫读效率。
 
-技术密度较高的章节不会为了追求固定压缩率而硬删内容。模型推理、数据一致性、缓存、实时计算、Schema、契约、权限、故障恢复、检索、RAG、知识图谱、Runtime、工具协议、Memory、HITL、语义层、NL2SQL、Python 沙箱、EvidenceRef、Trace、Benchmark、Judge、FinOps、SLO、GPU 调度、KServe、LLM 网关与 GitOps 等工程关系会优先保留，重复的“发布门禁—运行台账—复审—证据”尽量合并成一条完整的生产化链路。
+技术密度较高的章节不会为了追求固定压缩率而硬删内容。模型推理、数据一致性、缓存、实时计算、Schema、契约、权限、故障恢复、检索、RAG、知识图谱、Runtime、工具协议、Memory、HITL、语义层、NL2SQL、Python 沙箱、EvidenceRef、Trace、Benchmark、Judge、FinOps、SLO、GPU 调度、KServe、LLM 网关、GitOps、前端事件协议、Artifact 与多模态证据等工程关系会优先保留，重复的“发布门禁—运行台账—复审—证据”尽量合并成一条完整的生产化链路。
 
 **目标不是做摘要，而是在尽量不损失有效信息的前提下，让正文更像人工精修后的专业技术书。**
 
