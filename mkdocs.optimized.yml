@@ -84,3 +84,11 @@ nav:
       - 第7章：推理优化: part02-model-inference/ch/new_ch07_.md
       - 第8章：结构化输出与提示工程: part02-model-inference/ch/new_ch08_.md
       - 第9章：模型能力定制与知识增强: part02-model-inference/ch/new_ch09_.md
+  - Part III 数据基础设施:
+      - 导读: part03-data-infra/ch/new_index_.md
+      - 第10章：数据采集与集成: part03-data-infra/ch/new_ch10_.md
+      - 第11章：数据湖与湖仓: part03-data-infra/ch/new_ch11_.md
+      - 第12章：湖仓引擎与 OLAP: part03-data-infra/ch/new_ch12-olap_.md
+      - 第13章：流式计算与实时数据: part03-data-infra/ch/new_ch13_.md
+      - 第14章：数据编排与质量: part03-data-infra/ch/new_ch14_.md
+      - 第15章：元数据、血缘、契约与指标: part03-data-infra/ch/new_ch15_.md

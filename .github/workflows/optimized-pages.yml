@@ -34,29 +34,30 @@ jobs:
       - name: Prepare optimized documentation source
         run: |
           rm -rf .optimized-docs
-          mkdir -p .optimized-docs/part01-overview/ch
-          mkdir -p .optimized-docs/part02-model-inference/ch
-          mkdir -p .optimized-docs/images/part1/ch
-          mkdir -p .optimized-docs/images/part2/ch
           mkdir -p .optimized-docs/stylesheets
-
           cp docs/optimized_index.md .optimized-docs/index.md
 
-          cp docs/part01-overview/ch/new_index_.md .optimized-docs/part01-overview/ch/new_index_.md
-          cp docs/part01-overview/ch/new_ch01-agent_.md .optimized-docs/part01-overview/ch/new_ch01-agent_.md
-          cp docs/part01-overview/ch/new_ch02-agent_.md .optimized-docs/part01-overview/ch/new_ch02-agent_.md
-          cp docs/part01-overview/ch/new_ch03-ai-agent_.md .optimized-docs/part01-overview/ch/new_ch03-ai-agent_.md
-          cp docs/part01-overview/ch/new_ch04_.md .optimized-docs/part01-overview/ch/new_ch04_.md
+          # Publish only optimized Markdown drafts. Original and not-yet-optimized
+          # chapters stay in the repository but never enter the Pages source tree.
+          for dir in docs/part*/ch; do
+            [ -d "$dir" ] || continue
+            if find "$dir" -maxdepth 1 -type f -name 'new_*.md' | grep -q .; then
+              target=".optimized-docs/${dir#docs/}"
+              mkdir -p "$target"
+              find "$dir" -maxdepth 1 -type f -name 'new_*.md' -exec cp {} "$target/" \;
+            fi
+          done
 
-          cp docs/part02-model-inference/ch/new_index_.md .optimized-docs/part02-model-inference/ch/new_index_.md
-          cp docs/part02-model-inference/ch/new_ch05_.md .optimized-docs/part02-model-inference/ch/new_ch05_.md
-          cp docs/part02-model-inference/ch/new_ch06_.md .optimized-docs/part02-model-inference/ch/new_ch06_.md
-          cp docs/part02-model-inference/ch/new_ch07_.md .optimized-docs/part02-model-inference/ch/new_ch07_.md
-          cp docs/part02-model-inference/ch/new_ch08_.md .optimized-docs/part02-model-inference/ch/new_ch08_.md
-          cp docs/part02-model-inference/ch/new_ch09_.md .optimized-docs/part02-model-inference/ch/new_ch09_.md
+          # Images are static dependencies of optimized chapters. No original
+          # Markdown pages are copied into the optimized site.
+          mkdir -p .optimized-docs/images
+          for imgdir in docs/images/part*; do
+            [ -d "$imgdir" ] || continue
+            target=".optimized-docs/images/${imgdir#docs/images/}"
+            mkdir -p "$target"
+            cp -r "$imgdir"/. "$target"/
+          done
 
-          cp -r docs/images/part1/ch/. .optimized-docs/images/part1/ch/
-          cp -r docs/images/part2/ch/. .optimized-docs/images/part2/ch/
           cp -r docs/stylesheets/. .optimized-docs/stylesheets/
 
       - name: Build optimized Chinese site
