@@ -100,3 +100,15 @@ nav:
       - 第19章：文档解析与多模态 OCR: part04-vector-knowledge/ch/new_ch19-ocr_.md
       - 第20章：RAG 工程与高级检索: part04-vector-knowledge/ch/new_ch20-rag_.md
       - 第21章：知识工程：本体、抽取与知识图谱: part04-vector-knowledge/ch/new_ch21_.md
+  - Part V Agent 能力百科:
+      - 导读: part05-agent-capabilities/ch/new_index_.md
+      - 第22章：Agent Runtime: part05-agent-capabilities/ch/new_ch22-agent-runtime_.md
+      - 第23章：Tool Registry & Function Calling: part05-agent-capabilities/ch/new_ch23-tool-registry-function-calling_.md
+      - 第24章：MCP 与企业工具生态: part05-agent-capabilities/ch/new_ch24-mcp_.md
+      - 第25章：Planner 与编排模式: part05-agent-capabilities/ch/new_ch25-planner_.md
+      - 第26章：Agentic Workflow: part05-agent-capabilities/ch/new_ch26-agentic-workflow_.md
+      - 第27章：Memory 系统: part05-agent-capabilities/ch/new_ch27-memory_.md
+      - 第28章：多 Agent 协作: part05-agent-capabilities/ch/new_ch28-agent_.md
+      - 第29章：Agent 协议与标准: part05-agent-capabilities/ch/new_ch29-agent_.md
+      - 第30章：Human-in-the-loop 与长任务: part05-agent-capabilities/ch/new_ch30-human-in-the-loop_.md
+      - 第31章：框架横向对标: part05-agent-capabilities/ch/new_ch31_.md

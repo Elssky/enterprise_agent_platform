@@ -4,7 +4,7 @@
 
 这一版本以“更高信息密度、更少重复、更适合连续阅读和快速扫读”为目标。原始章节仍保留在仓库中，在线阅读页优先展示经过精简、合并和重点标注后的版本。
 
-**当前已完成：Part I 总论与平台观（第 1–4 章）、Part II 模型与推理（第 5–9 章）、Part III 数据基础设施（第 10–15 章）与 Part IV 向量、检索与知识工程（第 16–21 章）。**
+**当前已完成：Part I 总论与平台观（第 1–4 章）、Part II 模型与推理（第 5–9 章）、Part III 数据基础设施（第 10–15 章）、Part IV 向量、检索与知识工程（第 16–21 章）与 Part V Agent 能力百科（第 22–31 章）。**
 
 ## Part I 总论与平台观
 
@@ -43,11 +43,25 @@
 - [第20章 RAG 工程与高级检索](part04-vector-knowledge/ch/new_ch20-rag_.md)
 - [第21章 知识工程：本体、抽取与知识图谱](part04-vector-knowledge/ch/new_ch21_.md)
 
+## Part V Agent 能力百科
+
+- [Part V 导读](part05-agent-capabilities/ch/new_index_.md)
+- [第22章 Agent Runtime](part05-agent-capabilities/ch/new_ch22-agent-runtime_.md)
+- [第23章 Tool Registry & Function Calling](part05-agent-capabilities/ch/new_ch23-tool-registry-function-calling_.md)
+- [第24章 MCP 与企业工具生态](part05-agent-capabilities/ch/new_ch24-mcp_.md)
+- [第25章 Planner 与编排模式](part05-agent-capabilities/ch/new_ch25-planner_.md)
+- [第26章 Agentic Workflow](part05-agent-capabilities/ch/new_ch26-agentic-workflow_.md)
+- [第27章 Memory 系统](part05-agent-capabilities/ch/new_ch27-memory_.md)
+- [第28章 多 Agent 协作](part05-agent-capabilities/ch/new_ch28-agent_.md)
+- [第29章 Agent 协议与标准](part05-agent-capabilities/ch/new_ch29-agent_.md)
+- [第30章 Human-in-the-loop 与长任务](part05-agent-capabilities/ch/new_ch30-human-in-the-loop_.md)
+- [第31章 框架横向对标](part05-agent-capabilities/ch/new_ch31_.md)
+
 ## 本版编辑原则
 
 优化过程中遵循以下原则：保留核心定义、工程判断、重要案例、图片、表格、代码与参考文献；合并过细小节；删除同义反复和低信息量扩写；根据内容密度将章节整体压缩约 30%–50%；并用少量 **加粗结论句** 提升扫读效率。
 
-技术密度较高的章节不会为了追求固定压缩率而硬删内容。模型推理、数据一致性、缓存、实时计算、Schema、契约、权限、故障恢复、检索、RAG 与知识图谱等工程关系会优先保留，重复的“发布门禁—运行台账—复审—证据”尽量合并成一条完整的生产化链路。
+技术密度较高的章节不会为了追求固定压缩率而硬删内容。模型推理、数据一致性、缓存、实时计算、Schema、契约、权限、故障恢复、检索、RAG、知识图谱、Runtime、工具协议、Memory 和 HITL 等工程关系会优先保留，重复的“发布门禁—运行台账—复审—证据”尽量合并成一条完整的生产化链路。
 
 **目标不是做摘要，而是在尽量不损失有效信息的前提下，让正文更像人工精修后的专业技术书。**
 
