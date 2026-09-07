@@ -1,5 +1,6 @@
 name: optimized-pages
 
+# Optimized documentation deployment. Redeploy after enabling GitHub Pages.
 on:
   push:
     branches: [main]
