@@ -127,3 +127,9 @@ nav:
       - 第40章：在线评测、模型裁判与持续优化: part07-observability-eval/ch/new_ch40-llm-as-judge_.md
       - 第41章：成本治理与缓存优化: part07-observability-eval/ch/new_ch41-cost-governance-cache_.md
       - 第42章：SLO 管理、限流与系统韧性: part07-observability-eval/ch/new_ch42-slo_.md
+  - Part VIII 部署与基础设施:
+      - 导读: part08-deployment/ch/new_index_.md
+      - 第43章：GPU 调度与 Kubernetes: part08-deployment/ch/new_ch43-gpu-kubernetes_.md
+      - 第44章：模型部署: part08-deployment/ch/new_ch44_.md
+      - 第45章：LLM 网关与多租户: part08-deployment/ch/new_ch45-llm_.md
+      - 第46章：GitOps、IaC 与边缘推理: part08-deployment/ch/new_ch46-gitops-iac_.md
