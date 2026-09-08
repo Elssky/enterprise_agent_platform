@@ -1,10 +1,10 @@
 # 企业级 Agent 平台工程 · 优化阅读版
 
-> 当前在线版仅收录已经完成编辑优化的中文内容。未优化章节暂不发布到本页面。
+> 当前在线版收录已经完成编辑优化的中文编号正文。原始章节仍完整保留在仓库中。
 
-这一版本以“更高信息密度、更少重复、更适合连续阅读和快速扫读”为目标。原始章节仍保留在仓库中，在线阅读页优先展示经过精简、合并和重点标注后的版本。
+这一版本以“更高信息密度、更少重复、更适合连续阅读和快速扫读”为目标。在线阅读页优先展示经过精简、合并和重点标注后的版本。
 
-**当前已完成：Part I 总论与平台观（第 1–4 章）、Part II 模型与推理（第 5–9 章）、Part III 数据基础设施（第 10–15 章）、Part IV 向量、检索与知识工程（第 16–21 章）、Part V Agent 能力百科（第 22–31 章）、Part VI DataAgent 主线深潜（第 32–37 章）、Part VII 可观测性、评估与成本（第 38–42 章）、Part VIII 部署与基础设施（第 43–46 章）与 Part IX 前端、交互与多模态（第 47–49 章）。**
+**编号正文优化已完成：Part I–X，共第 1–53 章。**
 
 ## Part I 总论与平台观
 
@@ -91,12 +91,20 @@
 - [第48章 Generative UI 与富交互](part09-frontend-multimodal/ch/new_ch48-generative-ui_.md)
 - [第49章 多模态输入与语音 Agent](part09-frontend-multimodal/ch/new_ch49-agent_.md)
 
+## Part X 安全、合规与组织
+
+- [Part X 导读](part10-security-org/ch/new_index_.md)
+- [第50章 安全与攻防](part10-security-org/ch/new_ch50_.md)
+- [第51章 Guardrails 与内容安全](part10-security-org/ch/new_ch51-guardrails_.md)
+- [第52章 合规与法规](part10-security-org/ch/new_ch52_.md)
+- [第53章 组织、人才与平台演进路线图](part10-security-org/ch/new_ch53_.md)
+
 ## 本版编辑原则
 
 优化过程中遵循以下原则：保留核心定义、工程判断、重要案例、图片、表格、代码与参考文献；合并过细小节；删除同义反复和低信息量扩写；根据内容密度将章节整体压缩约 30%–50%；并用少量 **加粗结论句** 提升扫读效率。
 
-技术密度较高的章节不会为了追求固定压缩率而硬删内容。模型推理、数据一致性、缓存、实时计算、Schema、契约、权限、故障恢复、检索、RAG、知识图谱、Runtime、工具协议、Memory、HITL、语义层、NL2SQL、Python 沙箱、EvidenceRef、Trace、Benchmark、Judge、FinOps、SLO、GPU 调度、KServe、LLM 网关、GitOps、前端事件协议、Artifact 与多模态证据等工程关系会优先保留，重复的“发布门禁—运行台账—复审—证据”尽量合并成一条完整的生产化链路。
+技术密度较高的章节不会为了追求固定压缩率而硬删内容。模型推理、数据一致性、Schema、权限、故障恢复、RAG、知识图谱、Runtime、Tool、Memory、HITL、语义层、NL2SQL、Python 沙箱、EvidenceRef、Trace、Benchmark、Judge、FinOps、SLO、GPU 调度、KServe、LLM 网关、GitOps、前端事件协议、Artifact、多模态证据、安全、Guardrails 与合规控制等工程关系会优先保留；反复出现的“发布门禁—台账—复审—证据”尽量合并成一条完整生产链路。
 
 **目标不是做摘要，而是在尽量不损失有效信息的前提下，让正文更像人工精修后的专业技术书。**
 
-后续每完成一个 Part 的优化，就会将对应章节加入此在线阅读页。
+Part I–X 的第 1–53 章已全部纳入优化阅读版。

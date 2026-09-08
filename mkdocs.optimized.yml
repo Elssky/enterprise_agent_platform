@@ -138,3 +138,9 @@ nav:
       - 第47章：对话 UI 与流式输出: part09-frontend-multimodal/ch/new_ch47-ui_.md
       - 第48章：Generative UI 与富交互: part09-frontend-multimodal/ch/new_ch48-generative-ui_.md
       - 第49章：多模态输入与语音 Agent: part09-frontend-multimodal/ch/new_ch49-agent_.md
+  - Part X 安全、合规与组织:
+      - 导读: part10-security-org/ch/new_index_.md
+      - 第50章：安全与攻防: part10-security-org/ch/new_ch50_.md
+      - 第51章：Guardrails 与内容安全: part10-security-org/ch/new_ch51-guardrails_.md
+      - 第52章：合规与法规: part10-security-org/ch/new_ch52_.md
+      - 第53章：组织、人才与平台演进路线图: part10-security-org/ch/new_ch53_.md
